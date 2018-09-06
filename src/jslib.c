@@ -35,17 +35,17 @@ static duk_ret_t js_userinput(duk_context *ctx)
   title =
       n >= 3 ? duk_require_string(ctx, 2) : "";
 
-  const char *value;
+  char *value;
   int l;
   l = show_msg_user_input(title, msg, default_val, &value);
 
-  if (l != -1)
+  if (l == -1)
+    duk_push_null(ctx);
+  else
   {
     duk_push_lstring(ctx, value, l);
     free(value);
   }
-  else
-    duk_push_string(ctx, "");
 
   return 1;
 }
