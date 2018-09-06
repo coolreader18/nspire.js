@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.gs": "typescript",
+    "pack.mcmeta": "json",
+    "duktape.h": "c",
+    "libndls.h": "c",
+    "typeinfo": "c",
+    "type_traits": "c"
+  }
+}

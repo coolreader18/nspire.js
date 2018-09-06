@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/src/**",
+        "/usr/lib/ndless/ndless-sdk/include",
+        "${env:HOME}/.ndless/include"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/lib/ndless/ndless-sdk/bin/nspire-gcc",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}
+
